@@ -1,0 +1,1126 @@
+{
+    "lens_id": "",
+    "document_id": "OInh-0Cbp6Bwyfm_vaJR",
+    "original_document_id": "OInh-0Cbp6Bwyfm_vaJR",
+    "version": "29",
+    "lastChanged": "1676663301519",
+    "preview": "icon.png",
+    "videoPreview": "preview.mp4",
+    "videoPreviewUpdateTime": "",
+    "isReadOnly": "false",
+    "isAutoSaved": "false",
+    "api_level": "public",
+    "public_api_user_data_access": "unrestricted",
+    "studioVersion": {
+        "createdWith": {
+            "type": "Public",
+            "major": "4",
+            "minor": "19",
+            "patch": "0",
+            "build": "0"
+        },
+        "lastSavedWith": {
+            "type": "Public",
+            "major": "4",
+            "minor": "22",
+            "patch": "1",
+            "build": "0"
+        }
+    },
+    "view": {
+        "ResourceUiComponent": {
+            "collapsedList": [
+                [
+                    [
+                        "AnimeJS Resources"
+                    ],
+                    [
+                        "AnimeJS Resources",
+                        "Box"
+                    ],
+                    [
+                        "AnimeJS Resources",
+                        "Scripts"
+                    ],
+                    [
+                        "AnimeJS Resources",
+                        "Scripts",
+                        "Examples",
+                        "ColorLerpExample"
+                    ],
+                    [
+                        "AnimeJS Resources",
+                        "Scripts",
+                        "Examples",
+                        "EasingsExample"
+                    ],
+                    [
+                        "AnimeJS Resources",
+                        "Scripts",
+                        "Examples",
+                        "LifecycleRotationExample"
+                    ],
+                    [
+                        "AnimeJS Resources",
+                        "Scripts",
+                        "Examples",
+                        "StaggerPositionExample"
+                    ],
+                    [
+                        "AnimeJS Resources",
+                        "Scripts",
+                        "Examples",
+                        "WaitPromiseChainExample"
+                    ],
+                    [
+                        "AnimeJS Resources",
+                        "Scripts",
+                        "Promise"
+                    ],
+                    [
+                        "AnimeJS Resources",
+                        "Scripts",
+                        "Wait"
+                    ],
+                    [
+                        "AnimeJS Resources",
+                        "Scripts",
+                        "anime"
+                    ],
+                    [
+                        "AnimeJS Resources",
+                        "Unlit"
+                    ]
+                ]
+            ]
+        },
+        "SceneTreeUiComponent": {
+            "collapsedList": [
+                [
+                    "1517446348227994:84813",
+                    "1657227729034005:15253",
+                    "1657227753535552:18872",
+                    "1657227777985825:22362",
+                    "1676643833728492:30775",
+                    "1676644002381557:51701",
+                    "1676644136724744:69772",
+                    "1676650117006244:858017"
+                ]
+            ],
+            "selectionSetList": ""
+        },
+        "MetaInfoUIComponent": {
+            "hints": "",
+            "lens": "Untitled",
+            "applicability": "3",
+            "lens_descriptors": "",
+            "Spectacles2021UseAllowed": "false"
+        },
+        "PreviewUiComponent": {
+            "preview_descriptor": {
+                "is_capture": "0",
+                "camera_type": "2"
+            },
+            "show_snap_ui": "true",
+            "show_sponsored_ui": "false",
+            "preview_images_project_config": {
+                "back_preview_id": "bundle:Preview\/Images\/Beach.jpg",
+                "back_preview_is_favorite": "false",
+                "front_preview_id": "bundle:Preview\/Images\/Person 1.jpg",
+                "front_preview_is_favorite": "false"
+            },
+            "preview_videos_project_config": {
+                "back_preview_id": "bundle:Preview\/Videos\/Beach.webm",
+                "back_preview_is_favorite": "false",
+                "front_preview_id": "bundle:Preview\/Videos\/Idle Person 1.webm",
+                "front_preview_is_favorite": "false"
+            },
+            "preview_ie_project_config": {
+                "back_preview_id": "bundle:Preview\/InteractiveEnvironments\/Colorful Home",
+                "back_preview_is_favorite": "false",
+                "front_preview_id": "bundle:Preview\/InteractiveEnvironments\/Colorful Home",
+                "front_preview_is_favorite": "false"
+            }
+        },
+        "InspectorUiComponent": {
+            "collapsedList": [
+                [
+                    "1676650435353745:902050"
+                ]
+            ]
+        },
+        "ObjectTracking3DUIComponent": {
+            "foldedOwnerSceneObjects": ""
+        },
+        "MapUiComponent": {
+            "mapPinPoints": ""
+        },
+        "Material::UiComponent": {
+            "active_graph_asset": "-1:-1"
+        },
+        "Script::UiComponent": {
+            "active_graph_asset": "-1:-1"
+        },
+        "VFX::UiComponent": {
+            "active_graph_asset": "-1:-1"
+        }
+    },
+    "model": {
+        "IResourceManager": {
+            "list": [
+                {
+                    "resId": "1",
+                    "uid": "1:1",
+                    "name": "Camera Output",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "2",
+                    "uid": "2:2",
+                    "name": "Camera Input",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "12",
+                    "uid": "8675309:9035768",
+                    "name": "Physics Root World Settings Asset",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "13",
+                    "uid": "1651592440515161:5954",
+                    "name": "Files\/File8.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "15",
+                    "uid": "1651592521412783:16267",
+                    "name": "Files\/File10.mesh",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "16",
+                    "uid": "1651592623961845:28977",
+                    "name": "Files\/File12.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "17",
+                    "uid": "1651593115823728:89976",
+                    "name": "Files\/File13.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "19",
+                    "uid": "1676643619825484:1306",
+                    "name": "Files\/File16.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "20",
+                    "uid": "1676643726071582:15668",
+                    "name": "Files\/File17.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "21",
+                    "uid": "1676643959552570:45932",
+                    "name": "Files\/File18.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "22",
+                    "uid": "1676645484902699:242918",
+                    "name": "Files\/File19.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "23",
+                    "uid": "1676647050111427:448667",
+                    "name": "Files\/File20",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "26",
+                    "uid": "1676648450597617:640357",
+                    "name": "Files\/File25.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "28",
+                    "uid": "1676650107843640:855631",
+                    "name": "Files\/File27.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                }
+            ],
+            "MaterialUpdateManager": {
+                "unrecognizedMaterials": ""
+            }
+        },
+        "InspectorComponent": {
+            "Component": {
+                "EyeColorVisual": {
+                    "uidData": "",
+                    "generalData": ""
+                },
+                "FaceStretchVisual": {
+                    "uidsToFeatureNamesWithIntensity": ""
+                },
+                "ScreenTransform": {
+                    "uidData": [
+                        {
+                            "k": "1676644002386751:51778",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1676644002444228:51937",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        }
+                    ],
+                    "generalData": ""
+                }
+            }
+        },
+        "RenderOrderComponent": {
+            "autoRenderOrder": {
+                "0": "1517446348227994:84813",
+                "1": "1517446348228144:84822",
+                "2": "1528843813151434:5126",
+                "3": "1651592410285755:2220",
+                "4": "1651592510892047:14984",
+                "5": "1651593203018383:100933",
+                "6": "1651596667025437:523655",
+                "7": "1651596668966387:524100",
+                "8": "1651596670314832:524498",
+                "9": "1657227714402346:13421",
+                "10": "1657227729034005:15253",
+                "11": "1657227753535552:18872",
+                "12": "1657227777985825:22362",
+                "13": "1676643833728492:30775",
+                "14": "1676644002381557:51701",
+                "15": "1676644002386412:51776",
+                "16": "1676644002444142:51936",
+                "17": "1676644136724744:69772",
+                "18": "1676644270816050:86164",
+                "19": "1676644865087055:161412",
+                "20": "1676645470758058:240548",
+                "21": "1676647015120824:443105",
+                "22": "1676648432799367:638193",
+                "23": "1676650117006244:858017",
+                "24": "1676650435353745:902050"
+            }
+        },
+        "LayerComponent": {
+            "nextLayerId": "2",
+            "showOrthographicLayer": "true",
+            "layersInfo": [
+                {
+                    "layerId": "0",
+                    "layerName": "Default Layer",
+                    "layerMask": "1",
+                    "colorCode": "20"
+                },
+                {
+                    "layerId": "1",
+                    "layerName": "Orthographic Layer",
+                    "layerMask": "1048576",
+                    "colorCode": "21"
+                }
+            ]
+        },
+        "IFileManager": {
+            "pathes": [
+                {
+                    "k": "8",
+                    "v": "Files\/File8.js"
+                },
+                {
+                    "k": "10",
+                    "v": "Files\/File10.mesh"
+                },
+                {
+                    "k": "11",
+                    "v": "Files\/File11.mesh"
+                },
+                {
+                    "k": "12",
+                    "v": "Files\/File12.js"
+                },
+                {
+                    "k": "13",
+                    "v": "Files\/File13.js"
+                },
+                {
+                    "k": "16",
+                    "v": "Files\/File16.js"
+                },
+                {
+                    "k": "17",
+                    "v": "Files\/File17.js"
+                },
+                {
+                    "k": "18",
+                    "v": "Files\/File18.js"
+                },
+                {
+                    "k": "19",
+                    "v": "Files\/File19.js"
+                },
+                {
+                    "k": "20",
+                    "v": "Files\/File20"
+                },
+                {
+                    "k": "21",
+                    "v": "Files\/File21.lsmat"
+                },
+                {
+                    "k": "25",
+                    "v": "Files\/File25.js"
+                },
+                {
+                    "k": "27",
+                    "v": "Files\/File27.js"
+                }
+            ]
+        },
+        "RemoteApi::ModelManager": {
+            "api_specs": ""
+        },
+        "WorldComponent": {
+            "sceneFile": "scene.scn",
+            "sceneType": "binaryScene"
+        }
+    },
+    "controller": {
+        "IResourceController": {
+            "public": {
+                "pathes": [
+                    {
+                        "k": "968",
+                        "v": "AnimeJS Resources\/Scripts\/anime.js"
+                    },
+                    {
+                        "k": "970",
+                        "v": "AnimeJS Resources\/Box.mesh"
+                    },
+                    {
+                        "k": "971",
+                        "v": "AnimeJS Resources\/Scripts\/Examples\/StaggerPositionExample.js"
+                    },
+                    {
+                        "k": "972",
+                        "v": "AnimeJS Resources\/Scripts\/Promise.js"
+                    },
+                    {
+                        "k": "974",
+                        "v": "AnimeJS Resources\/Scripts\/Examples\/TimelineExample.js"
+                    },
+                    {
+                        "k": "975",
+                        "v": "AnimeJS Resources"
+                    },
+                    {
+                        "k": "976",
+                        "v": "AnimeJS Resources\/Scripts\/Examples\/EasingsExample.js"
+                    },
+                    {
+                        "k": "977",
+                        "v": "AnimeJS Resources\/Scripts"
+                    },
+                    {
+                        "k": "978",
+                        "v": "AnimeJS Resources\/Scripts\/Examples"
+                    },
+                    {
+                        "k": "979",
+                        "v": "AnimeJS Resources\/Scripts\/Wait.js"
+                    },
+                    {
+                        "k": "980",
+                        "v": "AnimeJS Resources\/Scripts\/Examples\/ColorLerpExample.js"
+                    },
+                    {
+                        "k": "983",
+                        "v": "AnimeJS Resources\/Unlit.lsmat"
+                    },
+                    {
+                        "k": "985",
+                        "v": "AnimeJS Resources\/Scripts\/Examples\/WaitPromiseChainExample.js"
+                    },
+                    {
+                        "k": "987",
+                        "v": "AnimeJS Resources\/Scripts\/Examples\/LifecycleRotationExample.js"
+                    }
+                ],
+                "hashes": [
+                    {
+                        "k": "1",
+                        "v": "671afbc1d6810060ccbaac866a91cfa1"
+                    },
+                    {
+                        "k": "2",
+                        "v": "8e599835d0d45c5879eafb1f474469cd"
+                    },
+                    {
+                        "k": "967",
+                        "v": "0cf0e87a54f33218fcf92a12d7f0ede2"
+                    },
+                    {
+                        "k": "968",
+                        "v": "a5789e426661c7e7c5d80d5f805a3196"
+                    },
+                    {
+                        "k": "969",
+                        "v": "572d66e85091711b6ee76609573a8364"
+                    },
+                    {
+                        "k": "970",
+                        "v": "621da74e06cc402b895f39376927a9d1"
+                    },
+                    {
+                        "k": "971",
+                        "v": "f3b0a2390c917efdf36c895c2690f835"
+                    },
+                    {
+                        "k": "972",
+                        "v": "482f813ec49eefe44d559ccdf02e7af7"
+                    },
+                    {
+                        "k": "973",
+                        "v": "f9f2ac550717ca937a68f116f34e58f0"
+                    },
+                    {
+                        "k": "974",
+                        "v": "37672eedcc7928e59f3863cf35b2e557"
+                    },
+                    {
+                        "k": "976",
+                        "v": "1f4c28e1e81a7cc09c7714ebbed5fd01"
+                    },
+                    {
+                        "k": "979",
+                        "v": "601069610b79476e78f6b3499d20a1d2"
+                    },
+                    {
+                        "k": "980",
+                        "v": "3dc9c763b6f8cff54b32f010715a9d49"
+                    },
+                    {
+                        "k": "982",
+                        "v": "0c8dcfed2f50bb81ac5276a14967c005"
+                    },
+                    {
+                        "k": "983",
+                        "v": "a17306be7cb28d93e80686b5d29200bc"
+                    },
+                    {
+                        "k": "984",
+                        "v": "c16a4a79b02e5c62fe12f8a724bc8a28"
+                    },
+                    {
+                        "k": "985",
+                        "v": "54b48188df1714b012057ed1582d05b4"
+                    },
+                    {
+                        "k": "986",
+                        "v": "59361291686fd7cebf3981836238abbb"
+                    },
+                    {
+                        "k": "987",
+                        "v": "1ae3c26996a6cbd03d8cc99baa9ed7c5"
+                    },
+                    {
+                        "k": "988",
+                        "v": "0462dcdd43e99277b5645bf9f60963d7"
+                    }
+                ],
+                "publicState": {
+                    "tree": {
+                        "isFolder": "true",
+                        "lastModified": "2023-02-17T11:27:51",
+                        "name": "Public",
+                        "hash": "1d7b4c7b334549e7d049504985b31546",
+                        "children": [
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2023-02-17T11:33:24",
+                                "name": "AnimeJS Resources",
+                                "hash": "4bb8d8e5b0efa2cb379c411c75b1ab0a",
+                                "children": [
+                                    {
+                                        "isFolder": "true",
+                                        "lastModified": "2023-02-17T09:26:04",
+                                        "name": "Scripts",
+                                        "hash": "3499ae18776a5c58372c95d5d106bcc8",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2023-02-17T10:52:33",
+                                                "name": "Wait.js",
+                                                "hash": "601069610b79476e78f6b3499d20a1d2",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-05-03T12:08:07",
+                                                "name": "Promise.js",
+                                                "hash": "482f813ec49eefe44d559ccdf02e7af7",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "true",
+                                                "lastModified": "2023-02-17T11:09:23",
+                                                "name": "Examples",
+                                                "hash": "0bf5cf8fa65db2751a61df6935445687",
+                                                "children": [
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2023-02-17T11:01:18",
+                                                        "name": "EasingsExample.js",
+                                                        "hash": "1f4c28e1e81a7cc09c7714ebbed5fd01",
+                                                        "children": ""
+                                                    },
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2023-02-17T10:29:41",
+                                                        "name": "TimelineExample.js",
+                                                        "hash": "37672eedcc7928e59f3863cf35b2e557",
+                                                        "children": ""
+                                                    },
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2023-02-17T11:25:04",
+                                                        "name": "StaggerPositionExample.js",
+                                                        "hash": "f3b0a2390c917efdf36c895c2690f835",
+                                                        "children": ""
+                                                    },
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2023-02-17T10:47:11",
+                                                        "name": "WaitPromiseChainExample.js",
+                                                        "hash": "54b48188df1714b012057ed1582d05b4",
+                                                        "children": ""
+                                                    },
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2023-02-17T11:23:53",
+                                                        "name": "LifecycleRotationExample.js",
+                                                        "hash": "1ae3c26996a6cbd03d8cc99baa9ed7c5",
+                                                        "children": ""
+                                                    },
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2023-02-17T09:22:35",
+                                                        "name": "folder.lock",
+                                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                        "children": ""
+                                                    },
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2023-02-17T10:57:05",
+                                                        "name": "ColorLerpExample.js",
+                                                        "hash": "3dc9c763b6f8cff54b32f010715a9d49",
+                                                        "children": ""
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2023-02-17T14:32:45",
+                                                "name": "anime.js",
+                                                "hash": "a5789e426661c7e7c5d80d5f805a3196",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2023-02-17T09:22:18",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-04-25T14:07:40",
+                                        "name": "Box.mesh",
+                                        "hash": "621da74e06cc402b895f39376927a9d1",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2023-02-17T11:33:27",
+                                        "name": "Unlit.lsmat",
+                                        "hash": "8f45b51f53b6dae47bc0c6f71cd27a95",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2023-02-17T09:21:51",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "false",
+                                "lastModified": "2022-04-25T14:07:40",
+                                "name": "folder.lock",
+                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                "children": ""
+                            }
+                        ]
+                    }
+                },
+                "complexResources": ""
+            },
+            "tree": {
+                "name": "",
+                "type": "0",
+                "subtype": "-1",
+                "resourceId": "-1",
+                "dependency": "0",
+                "hidden": "false",
+                "uid": "-1:-1",
+                "fileId": "18446744073709551615",
+                "originalId": "18446744073709551615",
+                "publicId": "18446744073709551615",
+                "source": "",
+                "additional": "",
+                "resources": [
+                    {
+                        "name": "Render Target",
+                        "type": "1",
+                        "subtype": "1",
+                        "resourceId": "1",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1:1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "18446744073709551615",
+                        "source": "",
+                        "additional": ""
+                    },
+                    {
+                        "name": "Device Camera Texture",
+                        "type": "1",
+                        "subtype": "3",
+                        "resourceId": "2",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "2:2",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "18446744073709551615",
+                        "source": "",
+                        "additional": ""
+                    },
+                    {
+                        "name": "Physics Root World Settings",
+                        "type": "36",
+                        "subtype": "1",
+                        "resourceId": "12",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "8675309:9035768",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "18446744073709551615",
+                        "source": "",
+                        "additional": ""
+                    },
+                    {
+                        "name": "AnimeJS Resources",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "975",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "Scripts",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "977",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "Examples",
+                                        "type": "0",
+                                        "subtype": "-1",
+                                        "resourceId": "-1",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "-1:-1",
+                                        "fileId": "18446744073709551615",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "978",
+                                        "source": "",
+                                        "additional": "",
+                                        "resources": [
+                                            {
+                                                "name": "TimelineExample",
+                                                "type": "4",
+                                                "subtype": "0",
+                                                "resourceId": "19",
+                                                "dependency": "0",
+                                                "hidden": "false",
+                                                "uid": "1676643619825484:1306",
+                                                "fileId": "16",
+                                                "originalId": "18446744073709551615",
+                                                "publicId": "974",
+                                                "source": "\/Users\/josh\/Library\/CloudStorage\/GoogleDrive-josh@popul-ar.com\/Shared drives\/PopulAR Studio\/Creators Workspace\/Josh\/Library\/_LensStudio\/snap-anime-js\/Public\/TimelineExample.js",
+                                                "additional": ""
+                                            },
+                                            {
+                                                "name": "StaggerPositionExample",
+                                                "type": "4",
+                                                "subtype": "0",
+                                                "resourceId": "16",
+                                                "dependency": "0",
+                                                "hidden": "false",
+                                                "uid": "1651592623961845:28977",
+                                                "fileId": "12",
+                                                "originalId": "18446744073709551615",
+                                                "publicId": "971",
+                                                "source": "\/Users\/josh\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudioaqOYdshlpVsQ\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                                "additional": ""
+                                            },
+                                            {
+                                                "name": "EasingsExample",
+                                                "type": "4",
+                                                "subtype": "0",
+                                                "resourceId": "20",
+                                                "dependency": "0",
+                                                "hidden": "false",
+                                                "uid": "1676643726071582:15668",
+                                                "fileId": "17",
+                                                "originalId": "18446744073709551615",
+                                                "publicId": "976",
+                                                "source": "\/Users\/josh\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudioXPfrIsGptzbY\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                                "additional": ""
+                                            },
+                                            {
+                                                "name": "ColorLerpExample",
+                                                "type": "4",
+                                                "subtype": "0",
+                                                "resourceId": "22",
+                                                "dependency": "0",
+                                                "hidden": "false",
+                                                "uid": "1676645484902699:242918",
+                                                "fileId": "19",
+                                                "originalId": "18446744073709551615",
+                                                "publicId": "980",
+                                                "source": "\/Users\/josh\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudioXPfrIsGptzbY\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                                "additional": ""
+                                            },
+                                            {
+                                                "name": "WaitPromiseChainExample",
+                                                "type": "4",
+                                                "subtype": "0",
+                                                "resourceId": "26",
+                                                "dependency": "0",
+                                                "hidden": "false",
+                                                "uid": "1676648450597617:640357",
+                                                "fileId": "25",
+                                                "originalId": "18446744073709551615",
+                                                "publicId": "985",
+                                                "source": "\/Users\/josh\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudioXPfrIsGptzbY\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                                "additional": ""
+                                            },
+                                            {
+                                                "name": "LifecycleRotationExample",
+                                                "type": "4",
+                                                "subtype": "0",
+                                                "resourceId": "28",
+                                                "dependency": "0",
+                                                "hidden": "false",
+                                                "uid": "1676650107843640:855631",
+                                                "fileId": "27",
+                                                "originalId": "18446744073709551615",
+                                                "publicId": "987",
+                                                "source": "\/Users\/josh\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudioXPfrIsGptzbY\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                                "additional": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Promise",
+                                        "type": "4",
+                                        "subtype": "0",
+                                        "resourceId": "17",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1651593115823728:89976",
+                                        "fileId": "13",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "972",
+                                        "source": "\/Users\/josh\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudioaqOYdshlpVsQ\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "anime",
+                                        "type": "4",
+                                        "subtype": "0",
+                                        "resourceId": "13",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1651592440515161:5954",
+                                        "fileId": "8",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "968",
+                                        "source": "\/Users\/josh\/.Trash\/anime.js",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Wait",
+                                        "type": "4",
+                                        "subtype": "0",
+                                        "resourceId": "21",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1676643959552570:45932",
+                                        "fileId": "18",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "979",
+                                        "source": "\/Users\/josh\/Desktop\/snap-arte-morgane\/Public\/Scripts\/Global\/Wait.js",
+                                        "additional": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Box",
+                                "type": "3",
+                                "subtype": "0",
+                                "resourceId": "15",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1651592521412783:16267",
+                                "fileId": "10",
+                                "originalId": "18446744073709551615",
+                                "publicId": "970",
+                                "source": "\/Applications\/Lens Studio 4.16.app\/Contents\/MacOS\/\/..\/Resources\/Studio3DResources.bundle\/\/meshes\/Box.mesh",
+                                "additional": {
+                                    "info": {
+                                        "vertexAttribs": [
+                                            {
+                                                "semantic": "position",
+                                                "format": "9",
+                                                "canBeDisabled": "false"
+                                            },
+                                            {
+                                                "semantic": "normal",
+                                                "format": "9",
+                                                "canBeDisabled": "true"
+                                            },
+                                            {
+                                                "semantic": "tangent",
+                                                "format": "9",
+                                                "canBeDisabled": "true"
+                                            },
+                                            {
+                                                "semantic": "color",
+                                                "format": "3",
+                                                "canBeDisabled": "true"
+                                            },
+                                            {
+                                                "semantic": "texture0",
+                                                "format": "9",
+                                                "canBeDisabled": "true"
+                                            }
+                                        ],
+                                        "hasBlendShapes": "false"
+                                    }
+                                }
+                            },
+                            {
+                                "name": "Unlit",
+                                "type": "2",
+                                "subtype": "1",
+                                "resourceId": "23",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1676647050111427:448667",
+                                "fileId": "20",
+                                "originalId": "21",
+                                "publicId": "983",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "InspectorController": {
+            "selection": ""
+        },
+        "EffectsController": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "10": "",
+            "11": "",
+            "12": "",
+            "13": "",
+            "14": "",
+            "15": "",
+            "16": "",
+            "17": "",
+            "18": "",
+            "19": "",
+            "20": "",
+            "22": "",
+            "23": "",
+            "24": "",
+            "25": "",
+            "26": "",
+            "27": "",
+            "28": "",
+            "29": "",
+            "30": "",
+            "31": "",
+            "32": ""
+        },
+        "ObjectPrefabController": {
+            "state": {
+                "objectToInfo": ""
+            },
+            "importInfo": ""
+        },
+        "Compression::IController": {
+            "new_compression_info": [
+                {
+                    "k": "1651592521412783:16267",
+                    "v": {
+                        "infos": {
+                            "originalSize": "794",
+                            "compressedSize": "794",
+                            "originalRAM": "1320",
+                            "compressedRAM": "1320",
+                            "extension": "mesh",
+                            "settings": {
+                                "isCompressed": "false",
+                                "info": {
+                                    "vertexAttribs": [
+                                        {
+                                            "semantic": "position",
+                                            "format": "9",
+                                            "canBeDisabled": "false"
+                                        },
+                                        {
+                                            "semantic": "normal",
+                                            "format": "9",
+                                            "canBeDisabled": "true"
+                                        },
+                                        {
+                                            "semantic": "tangent",
+                                            "format": "9",
+                                            "canBeDisabled": "true"
+                                        },
+                                        {
+                                            "semantic": "color",
+                                            "format": "3",
+                                            "canBeDisabled": "true"
+                                        },
+                                        {
+                                            "semantic": "texture0",
+                                            "format": "9",
+                                            "canBeDisabled": "true"
+                                        }
+                                    ],
+                                    "hasBlendShapes": "false"
+                                },
+                                "type": "0",
+                                "attributeFormat": "",
+                                "draco": {
+                                    "posBits": "11",
+                                    "texBits": "10",
+                                    "normalBits": "8",
+                                    "colorBits": "8",
+                                    "compressLvl": "7"
+                                }
+                            }
+                        },
+                        "uncompressed_file": "11",
+                        "compressed_files": ""
+                    }
+                }
+            ]
+        },
+        "AssetLibController": {
+            "itemUidToID": ""
+        }
+    },
+    "templateName": "Empty Project",
+    "templateUrl": "Lens Studio version 4.19.0"
+}
