@@ -19,7 +19,7 @@ Download [anime.js.lso](./anime.js.lso) and drop it into your project to install
 
 Here's an example of a simple turntable animation: 
 
-```
+```javascript
 var transform = script.getTransform()
 anime({
   targets: transform.getLocalRotation().toEulerAngles(),
