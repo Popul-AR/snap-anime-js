@@ -20,11 +20,13 @@ var colorA = script.colorA
 var colorB = script.colorB
 
 anime({
+  targets: {x: 0},
+  x: 1,
   duration: 1,
   loop: true,
   direction: 'alternate',
   easing: 'linear',
   update(anim){
-    material.mainPass.baseColor = vec4.lerp(colorA, colorB, anim.progress*.01)
+    material.mainPass.baseColor = vec4.lerp(colorA, colorB, anim.animations[0].currentValue)
   }
 })
