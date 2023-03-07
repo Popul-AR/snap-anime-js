@@ -712,8 +712,82 @@ var engine = (function () {
   return play;
 })();
 
-// Public Instance
+/**
+ * @typedef {Object} AnimeParams
+ * @param {Object|Array} params.targets A JavaScript Object or Array with at least one property containing a numerical value.
+ * @param {Number} params.duration Defines the duration in seconds of the animation.
+ * @param {Number} params.delay Defines the delay in seconds of the animation.
+ * @param {Number} params.endDelay Adds some extra time in milliseconds at the end of the animation.
+ * @param {String} params.easing Defines the timing function of the animation.
+ * @param {Number} params.round Rounds up the value to x decimals.
+ * @param {'normal'|'reverse'|'alternate'} params.direction Defines the direction of the animation.
+ * @param {Boolean|Number} params.loop Defines the number of iterations of your animation.
+ * @param {Boolean} params.autoplay Defines if the animation should automatically start or not.
+ * @param {Object[]} params.keyframes Animation keyframes are defined using an Array, within the keyframes property.
+ * @param {function(object)} params.update Callback triggered on every frame as soon as the animation starts playing.
+ * @param {function(object)} params.begin Callback is triggered once, when the animation starts playing.
+ * @param {function(object)} params.complete Callback is triggered once, when the animation is completed.
+ * @param {function(object)} params.loopBegin callback is triggered once everytime a loop begins.
+ * @param {function(object)} params.loopComplete callback is triggered once everytime a loop is completed.
+ * @param {function(object)} params.change Callback triggered on every frame in between the animation's delay and endDelay.
+ * @param {function(object)} params.changeBegin callback is triggered everytime the animation starts changing.
+ * @param {function(object)} params.changeComplete callback is triggered everytime the animation stops changing.
+ * @param {Promise} params.finished Resolves when the animation is complete. 
+ */
 
+/**
+ * @typedef {Object} AnimeInstance
+ * Methods
+ * @property {function} play Plays a paused animation, or starts the animation if the autoplay parameters is set to false.
+ * @property {function} pause Pauses a running animation.
+ * @property {function} restart Restarts an animation from its initial values.
+ * @property {function} reverse Reverses the direction of an animation.
+ * @property {function(number)} seek Jump to a specific time (in seconds).
+ * @property {function(String, Object)} set Immediately sets values to the specified targets.
+ * @property {function(number)} tick Plays an animation using an external requestAnimationFrame loop.
+ * @property {function(Object)} remove Removes targets from a running animation or timeline.
+ * @property {function} reset 
+ * Params
+ * @property {Boolean} autoplay Defines if the animation should automatically start or not.
+ * @property {Number} duration Defines the duration in seconds of the animation.
+ * @property {Number} delay Defines the delay in seconds of the animation.
+ * @property {Number} endDelay Adds some extra time in milliseconds at the end of the animation.
+ * @property {Boolean|Number} loop Defines the number of iterations of your animation.
+ * @property {'normal'|'reverse'|'alternate'} direction Defines the direction of the animation.
+ * @property {function(object)} begin Callback is triggered once, when the animation starts playing.
+ * @property {function(object)} complete Callback is triggered once, when the animation is completed.
+ * @property {function(object)} loopBegin callback is triggered once everytime a loop begins.
+ * @property {function(object)} loopComplete callback is triggered once everytime a loop is completed.
+ * @property {function(object)} change Callback triggered on every frame in between the animation's delay and endDelay.
+ * @property {function(object)} changeBegin callback is triggered everytime the animation starts changing.
+ * @property {function(object)} changeComplete callback is triggered everytime the animation stops changing.
+ * States
+ * @property {Promise} finished Resolves when the animation is finished
+ * @property {Array} animatables
+ * @property {Array} animations
+ * @property {Array} children
+ * @property {Number} id
+ * @property {Boolean} began
+ * @property {Boolean} changeBegan
+ * @property {Boolean} changeCompleted
+ * @property {Boolean} completed
+ * @property {Number} currentTime
+ * @property {Boolean} loopBegan
+ * @property {Boolean} passThrough
+ * @property {Boolean} paused
+ * @property {Number} progress
+ * @property {Number} remaining
+ * @property {Boolean} reversePlayback
+ * @property {Boolean} reversed
+ * @property {Number} timelineOffset
+ */
+
+// Public Instance
+/**
+ * Creates an animation with anime.js
+ * @param {AnimeParams} params animation parameters.
+ * @returns {AnimeInstance}
+ */
 function anime(params) {
   if (params === void 0) params = {};
 
@@ -1104,7 +1178,7 @@ anime.random = function (min, max) { return Math.floor(Math.random() * (max - mi
   
   NOTE: Below is specific to Lens Studio, not included in the official animejs build
 
-*/ 
+*/
 
 /**
  * Convenience function for anime's update callback to set vec3
