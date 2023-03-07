@@ -3,7 +3,7 @@
     "document_id": "OInh-0Cbp6Bwyfm_vaJR",
     "original_document_id": "OInh-0Cbp6Bwyfm_vaJR",
     "version": "29",
-    "lastChanged": "1676663301519",
+    "lastChanged": "1678200081383",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -32,15 +32,8 @@
             "collapsedList": [
                 [
                     [
-                        "AnimeJS Resources"
-                    ],
-                    [
                         "AnimeJS Resources",
                         "Box"
-                    ],
-                    [
-                        "AnimeJS Resources",
-                        "Scripts"
                     ],
                     [
                         "AnimeJS Resources",
@@ -516,7 +509,7 @@
                     },
                     {
                         "k": "968",
-                        "v": "a5789e426661c7e7c5d80d5f805a3196"
+                        "v": "3df7172ff68a4a7d1dd4b43fe0eb268b"
                     },
                     {
                         "k": "969",
@@ -560,7 +553,7 @@
                     },
                     {
                         "k": "983",
-                        "v": "a17306be7cb28d93e80686b5d29200bc"
+                        "v": "f0668113fe13cff092972c92a52e9cec"
                     },
                     {
                         "k": "984",
@@ -586,87 +579,87 @@
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2023-02-17T11:27:51",
+                        "lastModified": "2023-02-21T12:16:05",
                         "name": "Public",
-                        "hash": "1d7b4c7b334549e7d049504985b31546",
+                        "hash": "f8dee466f766e2a42d586d93e69d65e5",
                         "children": [
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-02-17T11:33:24",
+                                "lastModified": "2023-02-21T12:16:05",
                                 "name": "AnimeJS Resources",
-                                "hash": "4bb8d8e5b0efa2cb379c411c75b1ab0a",
+                                "hash": "0aba177ef32d18fa33fcbf0566b71352",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-02-17T09:26:04",
+                                        "lastModified": "2023-02-21T12:16:06",
                                         "name": "Scripts",
-                                        "hash": "3499ae18776a5c58372c95d5d106bcc8",
+                                        "hash": "8998925b596b803d94d94a7db94afa34",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2023-02-17T10:52:33",
+                                                "lastModified": "2023-02-17T14:57:19",
                                                 "name": "Wait.js",
                                                 "hash": "601069610b79476e78f6b3499d20a1d2",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-05-03T12:08:07",
+                                                "lastModified": "2023-02-17T14:57:19",
                                                 "name": "Promise.js",
                                                 "hash": "482f813ec49eefe44d559ccdf02e7af7",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2023-02-17T11:09:23",
+                                                "lastModified": "2023-02-17T14:57:21",
                                                 "name": "Examples",
                                                 "hash": "0bf5cf8fa65db2751a61df6935445687",
                                                 "children": [
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T11:01:18",
+                                                        "lastModified": "2023-02-17T14:57:19",
                                                         "name": "EasingsExample.js",
                                                         "hash": "1f4c28e1e81a7cc09c7714ebbed5fd01",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T10:29:41",
+                                                        "lastModified": "2023-02-17T14:57:19",
                                                         "name": "TimelineExample.js",
                                                         "hash": "37672eedcc7928e59f3863cf35b2e557",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T11:25:04",
+                                                        "lastModified": "2023-02-17T14:57:19",
                                                         "name": "StaggerPositionExample.js",
                                                         "hash": "f3b0a2390c917efdf36c895c2690f835",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T10:47:11",
+                                                        "lastModified": "2023-02-17T14:57:19",
                                                         "name": "WaitPromiseChainExample.js",
                                                         "hash": "54b48188df1714b012057ed1582d05b4",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T11:23:53",
+                                                        "lastModified": "2023-02-17T14:57:19",
                                                         "name": "LifecycleRotationExample.js",
                                                         "hash": "1ae3c26996a6cbd03d8cc99baa9ed7c5",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T09:22:35",
+                                                        "lastModified": "2023-02-17T14:57:19",
                                                         "name": "folder.lock",
                                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T10:57:05",
+                                                        "lastModified": "2023-02-17T14:57:19",
                                                         "name": "ColorLerpExample.js",
                                                         "hash": "3dc9c763b6f8cff54b32f010715a9d49",
                                                         "children": ""
@@ -675,14 +668,14 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2023-02-17T14:32:45",
+                                                "lastModified": "2023-03-07T09:39:48",
                                                 "name": "anime.js",
-                                                "hash": "a5789e426661c7e7c5d80d5f805a3196",
+                                                "hash": "3df7172ff68a4a7d1dd4b43fe0eb268b",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2023-02-17T09:22:18",
+                                                "lastModified": "2023-02-17T14:57:19",
                                                 "name": "folder.lock",
                                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                 "children": ""
@@ -691,21 +684,21 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-04-25T14:07:40",
+                                        "lastModified": "2023-02-17T14:57:12",
                                         "name": "Box.mesh",
                                         "hash": "621da74e06cc402b895f39376927a9d1",
                                         "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-02-17T11:33:27",
+                                        "lastModified": "2023-02-17T14:57:12",
                                         "name": "Unlit.lsmat",
-                                        "hash": "8f45b51f53b6dae47bc0c6f71cd27a95",
+                                        "hash": "a17306be7cb28d93e80686b5d29200bc",
                                         "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-02-17T09:21:51",
+                                        "lastModified": "2023-02-17T14:57:12",
                                         "name": "folder.lock",
                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                         "children": ""
@@ -714,7 +707,7 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2022-04-25T14:07:40",
+                                "lastModified": "2023-02-17T14:57:08",
                                 "name": "folder.lock",
                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                 "children": ""
@@ -1017,7 +1010,18 @@
             }
         },
         "InspectorController": {
-            "selection": ""
+            "selection": {
+                "resources": [
+                    {
+                        "uid": "1651592440515161:5954",
+                        "path_list": [
+                            "AnimeJS Resources",
+                            "Scripts",
+                            "anime"
+                        ]
+                    }
+                ]
+            }
         },
         "EffectsController": {
             "1": "",

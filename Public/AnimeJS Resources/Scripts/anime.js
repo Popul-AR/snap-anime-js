@@ -1187,7 +1187,6 @@ function updateLocalEuler(transform) {
   }
 }
 
-
 /**
  * Convenience function for anime's update callback to set world euler rotation
  * @param {Transform} transform scene
@@ -1207,12 +1206,52 @@ function updateWorldEuler(transform) {
   }
 }
 
+/**
+ * Convenience function for anime's update callback to set local scale
+ * @param {Transform} transform scene
+ * @returns {function} update handler for anime
+ * @description
+ *    
+ * var transform = sceneObj.getTransform()
+ * anime({
+ *  targets: transform.getLocalScale(),
+ *  update: anime.utils.updateLocalScale(transform),
+ * })
+ *  
+ */
+function updateLocalScale(transform) {
+  return function (anim) {
+    transform.setLocalScale(anim.animatables[0].target)
+  }
+}
+
+/**
+ * Convenience function for anime's update callback to set world scale
+ * @param {Transform} transform scene
+ * @returns {function} update handler for anime
+ * @description
+ *    
+ * var transform = sceneObj.getTransform()
+ * anime({
+ *  targets: transform.getWorldScale(),
+ *  update: anime.utils.updateWorldScale(transform),
+ * })
+ *  
+ */
+function updateWorldScale(transform) {
+  return function (anim) {
+    transform.setWorldScale(anim.animatables[0].target)
+  }
+}
+
 anime.utils = {
   updateProp: updateProp,
   updateLocalPosition: updateLocalPosition,
   updateWorldPosition: updateWorldPosition,
   updateLocalEuler: updateLocalEuler,
   updateWorldEuler: updateWorldEuler,
+  updateLocalScale: updateLocalScale,
+  updateWorldScale: updateWorldScale,
 }
 
 /**
