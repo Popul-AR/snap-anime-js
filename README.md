@@ -19,7 +19,7 @@ Download [anime.js.lso](./anime.js.lso) and drop it into your project to install
 
 Here's an example of a simple turntable animation: 
 
-```
+```javascript
 var transform = script.getTransform()
 anime({
   targets: transform.getLocalRotation().toEulerAngles(),
@@ -76,7 +76,7 @@ We use anime.js in web projects, so it was already part of our workflow. Instead
 
 To illustrate, here's what one of our animation control scripts might look like, using anime.js and Promises. It's easy to understand, and easy to comment out large blocks for testing specific sections. 
 
-```
+```javascript
 hideIntroInstructions()
   .then(showTitleCard)
   .then(showHandInstruction)
