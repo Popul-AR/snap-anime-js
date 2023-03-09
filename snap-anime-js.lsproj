@@ -3,7 +3,7 @@
     "document_id": "OInh-0Cbp6Bwyfm_vaJR",
     "original_document_id": "OInh-0Cbp6Bwyfm_vaJR",
     "version": "29",
-    "lastChanged": "1678200081383",
+    "lastChanged": "1678205993639",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -509,7 +509,7 @@
                     },
                     {
                         "k": "968",
-                        "v": "3df7172ff68a4a7d1dd4b43fe0eb268b"
+                        "v": "9e4b05bc1d00ec568e1ce4f00cd75a25"
                     },
                     {
                         "k": "969",
@@ -545,7 +545,7 @@
                     },
                     {
                         "k": "980",
-                        "v": "3dc9c763b6f8cff54b32f010715a9d49"
+                        "v": "bb6e84d2bfd3a6ceba65ef42fb76dbd2"
                     },
                     {
                         "k": "982",
@@ -553,7 +553,7 @@
                     },
                     {
                         "k": "983",
-                        "v": "f0668113fe13cff092972c92a52e9cec"
+                        "v": "4aff87a110951e1bfe2c76a8f2b8f5c0"
                     },
                     {
                         "k": "984",
@@ -579,21 +579,21 @@
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2023-02-21T12:16:05",
+                        "lastModified": "2023-03-07T09:42:06",
                         "name": "Public",
-                        "hash": "f8dee466f766e2a42d586d93e69d65e5",
+                        "hash": "45c8dd9ef50cc0f5d3d879022e570171",
                         "children": [
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-02-21T12:16:05",
+                                "lastModified": "2023-03-07T09:42:12",
                                 "name": "AnimeJS Resources",
-                                "hash": "0aba177ef32d18fa33fcbf0566b71352",
+                                "hash": "607d8ed64f01ffb940762b3403044e68",
                                 "children": [
                                     {
                                         "isFolder": "true",
                                         "lastModified": "2023-02-21T12:16:06",
                                         "name": "Scripts",
-                                        "hash": "8998925b596b803d94d94a7db94afa34",
+                                        "hash": "a9f7b8c4c3084224036ba3cd3068952c",
                                         "children": [
                                             {
                                                 "isFolder": "false",
@@ -613,7 +613,7 @@
                                                 "isFolder": "true",
                                                 "lastModified": "2023-02-17T14:57:21",
                                                 "name": "Examples",
-                                                "hash": "0bf5cf8fa65db2751a61df6935445687",
+                                                "hash": "9fad843b858a286cdd9f30f21c0149bd",
                                                 "children": [
                                                     {
                                                         "isFolder": "false",
@@ -659,18 +659,18 @@
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T14:57:19",
+                                                        "lastModified": "2023-03-07T09:47:21",
                                                         "name": "ColorLerpExample.js",
-                                                        "hash": "3dc9c763b6f8cff54b32f010715a9d49",
+                                                        "hash": "bb6e84d2bfd3a6ceba65ef42fb76dbd2",
                                                         "children": ""
                                                     }
                                                 ]
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2023-03-07T09:39:48",
+                                                "lastModified": "2023-03-07T11:16:26",
                                                 "name": "anime.js",
-                                                "hash": "3df7172ff68a4a7d1dd4b43fe0eb268b",
+                                                "hash": "9e4b05bc1d00ec568e1ce4f00cd75a25",
                                                 "children": ""
                                             },
                                             {
@@ -691,9 +691,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-02-17T14:57:12",
+                                        "lastModified": "2023-03-07T09:41:21",
                                         "name": "Unlit.lsmat",
-                                        "hash": "a17306be7cb28d93e80686b5d29200bc",
+                                        "hash": "f0668113fe13cff092972c92a52e9cec",
                                         "children": ""
                                     },
                                     {
@@ -1013,11 +1013,12 @@
             "selection": {
                 "resources": [
                     {
-                        "uid": "1651592440515161:5954",
+                        "uid": "1676645484902699:242918",
                         "path_list": [
                             "AnimeJS Resources",
                             "Scripts",
-                            "anime"
+                            "Examples",
+                            "ColorLerpExample"
                         ]
                     }
                 ]
