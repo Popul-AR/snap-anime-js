@@ -23,7 +23,7 @@ anime({
   z: 10,
   loop: true,
   direction: 'alternate',
-  easing: easing || anime.easings.easeInOutExpo,
+  easing: easing || 'easeInOutExpo',
   duration: 2,
   delay: anime.stagger(.1),
   update: function (tween, i) {

@@ -13,11 +13,12 @@
  * An object that represents a target with a given ID and a set of transforms.
  *
  * @typedef {Object} AnimeAnimatable
- * @property {number} id - The ID of the target.
- * @property {Object} target - An object representing the target, with an `x` property.
+ * @property {number} id - Animatable ID.
+ * @property {Object} target - Target object.
  * @property {number} total - The total number of transforms applied to the target.
  */
 
+// TODO add easeOutIn variants
 /**
  * @typedef {'linear'|'easeInQuad'|'easeOutQuad'|'easeInOutQuad'|'easeOutInQuad'|'easeInCubic'|'easeOutCubic'|'easeInOutCubic'|'easeOutInCubic'|'easeInQuart'|'easeOutQuart'|'easeInOutQuart'|'easeOutInQuart'|'easeInQuint'|'easeOutQuint'|'easeInOutQuint'|'easeOutInQuint'|'easeInSine'|'easeOutSine'|'easeInOutSine'|'easeOutInSine'|'easeInExpo'|'easeOutExpo'|'easeInOutExpo'|'easeOutInExpo'|'easeInCirc'|'easeOutCirc'|'easeInOutCirc'|'easeOutInCirc'|'easeInBack'|'easeOutBack'|'easeInOutBack'|'easeOutInBack'|'easeInBounce'|'easeOutBounce'|'easeInOutBounce'|'easeOutInBounce'} AnimePennerEasings
  */
@@ -34,45 +35,47 @@
  * @property {boolean|number} params.loop - Defines the number of iterations of your animation.
  * @property {boolean} params.autoplay - Defines if the animation should automatically start or not.
  * @property {Object[]} params.keyframes - Animation keyframes are defined using an Array, within the keyframes property.
+ * @typedefgroup Callbacks & Promises
  * @property {Function(AnimeInstance)} params.update - Callback triggered on every frame as soon as the animation starts playing.
  * @property {Function(AnimeInstance)} params.begin - Callback is triggered once, when the animation starts playing.
  * @property {Function(AnimeInstance)} params.complete - Callback is triggered once, when the animation is completed.
- * @property {Function(AnimeInstance)} params.loopBegin - callback is triggered once everytime a loop begins.
- * @property {Function(AnimeInstance)} params.loopComplete - callback is triggered once everytime a loop is completed.
+ * @property {Function(AnimeInstance)} params.loopBegin - Callback is triggered once everytime a loop begins.
+ * @property {Function(AnimeInstance)} params.loopComplete - Callback is triggered once everytime a loop is completed.
  * @property {Function(AnimeInstance)} params.change - Callback triggered on every frame in between the animation's delay and endDelay.
- * @property {Function(AnimeInstance)} params.changeBegin - callback is triggered everytime the animation starts changing.
- * @property {Function(AnimeInstance)} params.changeComplete - callback is triggered everytime the animation stops changing.
+ * @property {Function(AnimeInstance)} params.changeBegin - Callback is triggered everytime the animation starts changing.
+ * @property {Function(AnimeInstance)} params.changeComplete - Callback is triggered everytime the animation stops changing.
  * @property {Promise} - params.finished Resolves when the animation is complete. 
  */
 
 /**
  * @typedef {Object} AnimeInstance
- * Methods
- * @property {Function} play Plays a paused animation, or starts the animation if the autoplay parameters is set to false.
- * @property {Function} pause Pauses a running animation.
- * @property {Function} restart Restarts an animation from its initial values.
- * @property {Function} reverse Reverses the direction of an animation.
- * @property {Function(number)} seek Jump to a specific time (in seconds).
- * @property {Function(string, Object)} set Immediately sets values to the specified targets.
- * @property {Function(number)} tick Plays an animation using an external requestAnimationFrame loop.
- * @property {Function(Object)} remove Removes targets from a running animation or timeline.
+ * @typedefgroup Methods
+ * @property {Function} play - Plays a paused animation, or starts the animation if the autoplay parameters is set to false.
+ * @property {Function} pause - Pauses a running animation.
+ * @property {Function} restart - Restarts an animation from its initial values.
+ * @property {Function} reverse - Reverses the direction of an animation.
+ * @property {Function(number)} seek - Jump to a specific time (in seconds).
+ * @property {Function(string, Object)} - set Immediately sets values to the specified targets.
+ * @property {Function(number)} tick - Plays an animation using an external requestAnimationFrame loop.
+ * @property {Function(Object)} remove - Removes targets from a running animation or timeline.
  * @property {Function} reset 
- * Params
- * @property {boolean} autoplay Defines if the animation should automatically start or not.
- * @property {number} duration Defines the duration in seconds of the animation.
- * @property {number} delay Defines the delay in seconds of the animation.
- * @property {number} endDelay Adds some extra time in milliseconds at the end of the animation.
- * @property {boolean|number} loop Defines the number of iterations of your animation.
- * @property {'normal'|'reverse'|'alternate'} direction Defines the direction of the animation.
- * @property {Function(AnimeInstance)} begin Callback is triggered once, when the animation starts playing.
- * @property {Function(AnimeInstance)} complete Callback is triggered once, when the animation is completed.
- * @property {Function(AnimeInstance)} loopBegin callback is triggered once everytime a loop begins.
- * @property {Function(AnimeInstance)} loopComplete callback is triggered once everytime a loop is completed.
- * @property {Function(AnimeInstance)} change Callback triggered on every frame in between the animation's delay and endDelay.
- * @property {Function(AnimeInstance)} changeBegin callback is triggered everytime the animation starts changing.
- * @property {Function(AnimeInstance)} changeComplete callback is triggered everytime the animation stops changing.
- * States
- * @property {Promise} finished Resolves when the animation is finished
+ * @typedefgroup Params
+ * @property {boolean} autoplay - Defines if the animation should automatically start or not.
+ * @property {number} duration - Defines the duration in seconds of the animation.
+ * @property {number} delay - Defines the delay in seconds of the animation.
+ * @property {number} endDelay - Adds some extra time in milliseconds at the end of the animation.
+ * @property {boolean|number} loop - Defines the number of iterations of your animation.
+ * @property {'normal'|'reverse'|'alternate'} direction - Defines the direction of the animation.
+ * @typedefgroup Callbacks & Promises
+ * @property {Function(AnimeInstance)} begin - Callback is triggered once, when the animation starts playing.
+ * @property {Function(AnimeInstance)} complete - Callback is triggered once, when the animation is completed.
+ * @property {Function(AnimeInstance)} loopBegin - callback is triggered once everytime a loop begins.
+ * @property {Function(AnimeInstance)} loopComplete - callback is triggered once everytime a loop is completed.
+ * @property {Function(AnimeInstance)} change - Callback triggered on every frame in between the animation's delay and endDelay.
+ * @property {Function(AnimeInstance)} changeBegin - callback is triggered everytime the animation starts changing.
+ * @property {Function(AnimeInstance)} changeComplete - callback is triggered everytime the animation stops changing.
+ * @property {Promise} finished - Resolves when the animation is finished
+ * @typedefgroup States
  * @property {Array} animatables
  * @property {Array} animations
  * @property {Array} children

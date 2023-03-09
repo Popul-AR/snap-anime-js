@@ -12,7 +12,7 @@ screenTransforms.forEach(function (st) {
     targets: [st.position],
     y: [20, 0],
     duration: 2,
-    easing: anime.easings.easeOutBack,
+    easing: 'easeOutBack',
     update: anime.utils.updateProp(st, 'position'),
   })
   // move from mid to bottom
@@ -21,7 +21,7 @@ screenTransforms.forEach(function (st) {
     y: [0, -20],
     delay: 2,
     duration: 1,
-    easing: anime.easings.easeInQuint,
+    easing: 'easeInQuint',
     update: anime.utils.updateProp(st, 'position'),
     // equivalent manual method for updating props
     // update(anim) {
