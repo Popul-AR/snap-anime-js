@@ -19,8 +19,8 @@ screenTransforms.forEach(function (st) {
   tl.add({
     targets: [st.position],
     y: [0, -20],
-    delay: 2,
-    duration: 1,
+    delay: 2000,
+    duration: 1000,
     easing: 'easeInQuint',
     update: anime.ls.updateProp(st, 'position'),
     // equivalent manual method for updating props

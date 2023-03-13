@@ -17,7 +17,7 @@ anime({
   y: Math.PI * 2,
   loop: true,
   easing: easing || 'linear',
-  duration: 3,
+  duration: 3000,
   update: anime.ls.updateLocalEuler(transform),
   // update: function (tween, i) {
   //   transform.setLocalRotation(quat.fromEulerVec(tween.animatables[0].target))

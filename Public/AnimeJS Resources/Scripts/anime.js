@@ -101,21 +101,17 @@
  * @returns {AnimeTimelineInstance} The timeline instance.
  */
 
-
 /**
  * @typedef {AnimeInstance & { add:AnimeTimelineAdd }} AnimeTimelineInstance
  */
 
 // * @see {@link https://animejs.com/documentation/#timelineBasics}
 
-
-anime.timeline({})
-
 // Polyfills for browser functions
 var rafCallbacks = []
 script.createEvent('UpdateEvent').bind(function () {
   var l = rafCallbacks.length
-  var time = getTime()
+  var time = getTime() * 1000
   while (l--) rafCallbacks.shift()(time)
 })
 function requestAnimationFrame(cb) {

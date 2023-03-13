@@ -22,7 +22,7 @@ var colorB = script.colorB
 var anim = anime({
   targets: {x: 0},
   x: 1,
-  duration: 1,
+  duration: 1000,
   loop: true,
   direction: 'alternate',
   easing: 'linear',
