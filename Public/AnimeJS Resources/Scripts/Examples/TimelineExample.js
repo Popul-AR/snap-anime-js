@@ -11,7 +11,7 @@ screenTransforms.forEach(function (st) {
   tl.add({
     targets: [st.position],
     y: [20, 0],
-    duration: 2,
+    duration: 2000,
     easing: 'easeOutBack',
     update: anime.ls.updateProp(st, 'position'),
   })
@@ -32,5 +32,5 @@ screenTransforms.forEach(function (st) {
 })
 
 tl.finished.then(function () {
-  print('done!')
+  print('timeline done!')
 })

@@ -16,7 +16,6 @@
  * @property {number} total - Number of animatables in the animation.
  */
 
-// TODO add easeOutIn variants
 /**
  * @typedef {'linear'|'easeInQuad'|'easeOutQuad'|'easeInOutQuad'|'easeOutInQuad'|'easeInCubic'|'easeOutCubic'|'easeInOutCubic'|'easeOutInCubic'|'easeInQuart'|'easeOutQuart'|'easeInOutQuart'|'easeOutInQuart'|'easeInQuint'|'easeOutQuint'|'easeInOutQuint'|'easeOutInQuint'|'easeInSine'|'easeOutSine'|'easeInOutSine'|'easeOutInSine'|'easeInExpo'|'easeOutExpo'|'easeInOutExpo'|'easeOutInExpo'|'easeInCirc'|'easeOutCirc'|'easeInOutCirc'|'easeOutInCirc'|'easeInBack'|'easeOutBack'|'easeInOutBack'|'easeOutInBack'|'easeInBounce'|'easeOutBounce'|'easeInOutBounce'|'easeOutInBounce'} AnimePennerEasings
  */
@@ -1385,12 +1384,12 @@ function updateWorldScale(transform) {
 
 /*
 
-  Maybe move the lens studio stuff into anime.ls
+  TODO 
 
-  Make some convenience functions for lens studio
-  move, scale, rotate, color
+  - Make some convenience functions for lens studio
+    - move, scale, rotate, color
 
-  Can we use multiple targets somehow (e.g. move and scale in the same animation)
+  - Can we use multiple targets somehow (e.g. move and scale in the same animation)?
 
 */
 

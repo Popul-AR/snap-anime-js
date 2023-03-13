@@ -3,7 +3,7 @@
     "document_id": "OInh-0Cbp6Bwyfm_vaJR",
     "original_document_id": "OInh-0Cbp6Bwyfm_vaJR",
     "version": "29",
-    "lastChanged": "1678205993639",
+    "lastChanged": "1678735250436",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -272,6 +272,14 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "29",
+                    "uid": "1678733748098179:2711",
+                    "name": "Files\/File28.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -422,6 +430,10 @@
                 {
                     "k": "27",
                     "v": "Files\/File27.js"
+                },
+                {
+                    "k": "28",
+                    "v": "Files\/File28.js"
                 }
             ]
         },
@@ -492,6 +504,10 @@
                     {
                         "k": "987",
                         "v": "AnimeJS Resources\/Scripts\/Examples\/LifecycleRotationExample.js"
+                    },
+                    {
+                        "k": "988",
+                        "v": "AnimeJS Resources\/Scripts\/typedef-tester.js"
                     }
                 ],
                 "hashes": [
@@ -509,7 +525,7 @@
                     },
                     {
                         "k": "968",
-                        "v": "9e4b05bc1d00ec568e1ce4f00cd75a25"
+                        "v": "a3dd9abc9359c69099032808fb104828"
                     },
                     {
                         "k": "969",
@@ -521,7 +537,7 @@
                     },
                     {
                         "k": "971",
-                        "v": "f3b0a2390c917efdf36c895c2690f835"
+                        "v": "07610a6549c490d783e23d8201961673"
                     },
                     {
                         "k": "972",
@@ -533,11 +549,11 @@
                     },
                     {
                         "k": "974",
-                        "v": "37672eedcc7928e59f3863cf35b2e557"
+                        "v": "9e90c5308900e22600bf00706db8220c"
                     },
                     {
                         "k": "976",
-                        "v": "1f4c28e1e81a7cc09c7714ebbed5fd01"
+                        "v": "038dc8863934b17e280de84820c41928"
                     },
                     {
                         "k": "979",
@@ -545,7 +561,7 @@
                     },
                     {
                         "k": "980",
-                        "v": "bb6e84d2bfd3a6ceba65ef42fb76dbd2"
+                        "v": "3c2f62067ec7cbde2f728fdacc8ed128"
                     },
                     {
                         "k": "982",
@@ -553,7 +569,7 @@
                     },
                     {
                         "k": "983",
-                        "v": "4aff87a110951e1bfe2c76a8f2b8f5c0"
+                        "v": "5b7f70bd5e1a4edea12045ae57e266df"
                     },
                     {
                         "k": "984",
@@ -561,7 +577,7 @@
                     },
                     {
                         "k": "985",
-                        "v": "54b48188df1714b012057ed1582d05b4"
+                        "v": "d4a6aeafe99910e2a380509851abce11"
                     },
                     {
                         "k": "986",
@@ -569,11 +585,11 @@
                     },
                     {
                         "k": "987",
-                        "v": "1ae3c26996a6cbd03d8cc99baa9ed7c5"
+                        "v": "58e5636a8978e1c48e1d7f69335b4886"
                     },
                     {
                         "k": "988",
-                        "v": "0462dcdd43e99277b5645bf9f60963d7"
+                        "v": "3ce28226ea6b8be67ea42ad8733720a0"
                     }
                 ],
                 "publicState": {
@@ -581,25 +597,32 @@
                         "isFolder": "true",
                         "lastModified": "2023-03-07T09:42:06",
                         "name": "Public",
-                        "hash": "45c8dd9ef50cc0f5d3d879022e570171",
+                        "hash": "a1fb9c91bd1ba99e3e59938b53fdbab9",
                         "children": [
                             {
                                 "isFolder": "true",
-                                "lastModified": "2023-03-07T09:42:12",
+                                "lastModified": "2023-03-07T11:19:53",
                                 "name": "AnimeJS Resources",
-                                "hash": "607d8ed64f01ffb940762b3403044e68",
+                                "hash": "a119b6ce8df2c78ecf1e3c7b1fd1e69f",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2023-02-21T12:16:06",
+                                        "lastModified": "2023-03-13T12:45:35",
                                         "name": "Scripts",
-                                        "hash": "a9f7b8c4c3084224036ba3cd3068952c",
+                                        "hash": "10592ad8ca220226007ea609d558bf3f",
                                         "children": [
                                             {
                                                 "isFolder": "false",
                                                 "lastModified": "2023-02-17T14:57:19",
                                                 "name": "Wait.js",
                                                 "hash": "601069610b79476e78f6b3499d20a1d2",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2023-03-13T14:51:30",
+                                                "name": "typedef-tester.js",
+                                                "hash": "3ce28226ea6b8be67ea42ad8733720a0",
                                                 "children": ""
                                             },
                                             {
@@ -613,41 +636,41 @@
                                                 "isFolder": "true",
                                                 "lastModified": "2023-02-17T14:57:21",
                                                 "name": "Examples",
-                                                "hash": "9fad843b858a286cdd9f30f21c0149bd",
+                                                "hash": "93e4861db57ced866e05c27618f7791b",
                                                 "children": [
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T14:57:19",
+                                                        "lastModified": "2023-03-13T14:57:27",
                                                         "name": "EasingsExample.js",
-                                                        "hash": "1f4c28e1e81a7cc09c7714ebbed5fd01",
+                                                        "hash": "038dc8863934b17e280de84820c41928",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T14:57:19",
+                                                        "lastModified": "2023-03-13T14:52:40",
                                                         "name": "TimelineExample.js",
-                                                        "hash": "37672eedcc7928e59f3863cf35b2e557",
+                                                        "hash": "9e90c5308900e22600bf00706db8220c",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T14:57:19",
+                                                        "lastModified": "2023-03-13T14:52:38",
                                                         "name": "StaggerPositionExample.js",
-                                                        "hash": "f3b0a2390c917efdf36c895c2690f835",
+                                                        "hash": "07610a6549c490d783e23d8201961673",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T14:57:19",
+                                                        "lastModified": "2023-03-13T14:53:10",
                                                         "name": "WaitPromiseChainExample.js",
-                                                        "hash": "54b48188df1714b012057ed1582d05b4",
+                                                        "hash": "d4a6aeafe99910e2a380509851abce11",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-02-17T14:57:19",
+                                                        "lastModified": "2023-03-13T14:52:47",
                                                         "name": "LifecycleRotationExample.js",
-                                                        "hash": "1ae3c26996a6cbd03d8cc99baa9ed7c5",
+                                                        "hash": "58e5636a8978e1c48e1d7f69335b4886",
                                                         "children": ""
                                                     },
                                                     {
@@ -659,18 +682,18 @@
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2023-03-07T09:47:21",
+                                                        "lastModified": "2023-03-13T14:53:00",
                                                         "name": "ColorLerpExample.js",
-                                                        "hash": "bb6e84d2bfd3a6ceba65ef42fb76dbd2",
+                                                        "hash": "3c2f62067ec7cbde2f728fdacc8ed128",
                                                         "children": ""
                                                     }
                                                 ]
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2023-03-07T11:16:26",
+                                                "lastModified": "2023-03-13T15:12:23",
                                                 "name": "anime.js",
-                                                "hash": "9e4b05bc1d00ec568e1ce4f00cd75a25",
+                                                "hash": "a3dd9abc9359c69099032808fb104828",
                                                 "children": ""
                                             },
                                             {
@@ -691,9 +714,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2023-03-07T09:41:21",
+                                        "lastModified": "2023-03-07T11:19:53",
                                         "name": "Unlit.lsmat",
-                                        "hash": "f0668113fe13cff092972c92a52e9cec",
+                                        "hash": "4aff87a110951e1bfe2c76a8f2b8f5c0",
                                         "children": ""
                                     },
                                     {
@@ -941,6 +964,20 @@
                                         "originalId": "18446744073709551615",
                                         "publicId": "979",
                                         "source": "\/Users\/josh\/Desktop\/snap-arte-morgane\/Public\/Scripts\/Global\/Wait.js",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "typedef-tester",
+                                        "type": "4",
+                                        "subtype": "0",
+                                        "resourceId": "29",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1678733748098179:2711",
+                                        "fileId": "28",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "988",
+                                        "source": "\/Users\/josh\/local-workspace\/snap-anime-js\/Public\/AnimeJS Resources\/Scripts\/typedef-tester.js",
                                         "additional": ""
                                     }
                                 ]
