@@ -24,8 +24,8 @@
 /**
  * @typedef {Object} AnimeParams
  * @property {Object|Array} params.targets - A JavaScript Object or Array with at least one property containing a numerical value.
- * @property {number} params.duration - Defines the duration in seconds of the animation.
- * @property {number} params.delay - Defines the delay in seconds of the animation.
+ * @property {number} params.duration - Defines the duration in milliseconds of the animation.
+ * @property {number} params.delay - Defines the delay in milliseconds of the animation.
  * @property {number} params.endDelay - Adds some extra time in milliseconds at the end of the animation.
  * @property {AnimePennerEasings} params.easing - Defines the timing function of the animation.
  * @property {number} params.round - Rounds up the value to x decimals.
@@ -52,15 +52,15 @@
  * @property {Function} pause - Pauses a running animation.
  * @property {Function} restart - Restarts an animation from its initial values.
  * @property {Function} reverse - Reverses the direction of an animation.
- * @property {function(number)} seek - Jump to a specific time (in seconds).
+ * @property {function(number)} seek - Jump to a specific time (in milliseconds).
  * @property {function(string, Object)} set - set Immediately sets values to the specified targets.
  * @property {function(number)} tick - Plays an animation using an external requestAnimationFrame loop.
  * @property {function(Object)} remove - Removes targets from a running animation or timeline.
  * @property {Function} reset 
  * Params
  * @property {boolean} autoplay - Defines if the animation should automatically start or not.
- * @property {number} duration - Defines the duration in seconds of the animation.
- * @property {number} delay - Defines the delay in seconds of the animation.
+ * @property {number} duration - Defines the duration in milliseconds of the animation.
+ * @property {number} delay - Defines the delay in milliseconds of the animation.
  * @property {number} endDelay - Adds some extra time in milliseconds at the end of the animation.
  * @property {boolean|number} loop - Defines the number of iterations of your animation.
  * @property {'normal'|'reverse'|'alternate'} direction - Defines the direction of the animation.
@@ -1394,8 +1394,6 @@ function updateWorldScale(transform) {
 
 */
 
-// TODO need to make sure everything is in milliseconds to align with anime's documentation
-// TODO change this to anime.ls??
 anime.ls = {
   updateProp: updateProp,
   updateLocalPosition: updateLocalPosition,
