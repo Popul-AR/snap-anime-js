@@ -27,5 +27,13 @@ anime.ease.elastic('InOut', 2, 1)
 anime.ease.steps(3)
 anime.ease.penner('easeInExpo')
 
-// TODO timeline
-var tl = anime.timeline({})
+var tl = anime.timeline({
+  targets: {x: 0}, 
+  x: 1
+})
+tl.add({x: 2})
+
+anime.remove
+anime.get
+anime.set
+anime.stagger(.1)

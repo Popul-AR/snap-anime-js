@@ -7,8 +7,6 @@
 
 'use strict';
 
-//TODO timeline types
-
 /**
  * An object that represents a target with a given ID and a set of transforms.
  *
@@ -94,6 +92,24 @@
  * @property {boolean} reversed
  * @property {number} timelineOffset
  */
+
+/**
+ * A function that adds a child animation to a timeline.
+ * @typedef {function(params, timelineOffset?): AnimeTimelineInstance} AnimeTimelineAdd
+ * @param {AnimeParams} params - The child animation parameters, which override the timeline default parameters.
+ * @param {number} [timelineOffset] - An optional time offset that specifies when the animation starts in the timeline. If no offset is specified, the animation will start after the previous animation ends.
+ * @returns {AnimeTimelineInstance} The timeline instance.
+ */
+
+
+/**
+ * @typedef {AnimeInstance & { add:AnimeTimelineAdd }} AnimeTimelineInstance
+ */
+
+// * @see {@link https://animejs.com/documentation/#timelineBasics}
+
+
+anime.timeline({})
 
 // Polyfills for browser functions
 var rafCallbacks = []
@@ -802,9 +818,18 @@ var engine = (function () {
 })();
 
 // Public Instance
-
 /** 
+ * @typedef {Function} Anime
  * @param {AnimeParams} params - animation parameters.
+ * @property {string} version
+ * @property {number} speed - global animation speed.
+ * @property {AnimeInstance[]} running - Returns an Array of all active anime.js instances currently running.
+ * @property {function(targets) => void} remove - Removes targets from a running animation or timeline.
+ * @property {function(target, propertyName, unit)} get - Returns the original value of an element.
+ * @property {function(targets, propObject)} set - Immediately sets values to the specified targets.
+ * @property {function(value, staggerParams)} stagger - Staggering allows you to animate multiple elements with follow through and overlapping action.
+ * @property {function(min, max)} random - Returns a random integer within a specific range.
+ * @property {function(time)} tick - Plays an animation using an external requestAnimationFrame loop.
  * @returns {AnimeInstance}
  */
 function anime(params) {
@@ -1146,6 +1171,11 @@ function stagger(val, params) {
 
 // Timeline
 
+/**
+ * Timelines let you synchronise multiple animations together.
+ * @param {AnimeParams} params 
+ * @returns {AnimeTimelineInstance}
+ */
 function timeline(params) {
   if (params === void 0) params = {};
 
@@ -1198,9 +1228,6 @@ anime.random = function (min, max) { return Math.floor(Math.random() * (max - mi
 
 */
 
-/**
- * @property {AnimePennerEasings} penner
- */
 anime.ease = {
   /**
    * @param {AnimePennerEasings} type
