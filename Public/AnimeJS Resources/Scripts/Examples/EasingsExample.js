@@ -16,7 +16,7 @@ easingStrings.forEach(function(ease, i){
 
   anime({
     targets: transform.getLocalPosition(),
-    update: anime.utils.updateLocalPosition(transform),
+    update: anime.ls.updateLocalPosition(transform),
     y: [-10, 10],
     loop: true,
     direction: 'alternate',

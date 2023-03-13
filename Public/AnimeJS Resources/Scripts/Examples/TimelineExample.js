@@ -13,7 +13,7 @@ screenTransforms.forEach(function (st) {
     y: [20, 0],
     duration: 2,
     easing: 'easeOutBack',
-    update: anime.utils.updateProp(st, 'position'),
+    update: anime.ls.updateProp(st, 'position'),
   })
   // move from mid to bottom
   tl.add({
@@ -22,7 +22,7 @@ screenTransforms.forEach(function (st) {
     delay: 2,
     duration: 1,
     easing: 'easeInQuint',
-    update: anime.utils.updateProp(st, 'position'),
+    update: anime.ls.updateProp(st, 'position'),
     // equivalent manual method for updating props
     // update(anim) {
     //   // needs reassignment
