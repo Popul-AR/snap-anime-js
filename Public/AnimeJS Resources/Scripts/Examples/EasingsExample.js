@@ -2,8 +2,7 @@
 /** @type {SceneObject} */
 var obj = script.obj
 
-var easingStrings = Object.keys(anime.easings)
-
+var easingStrings = ['linear', 'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeOutInQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeOutInCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart', 'easeOutInQuart', 'easeInQuint', 'easeOutQuint', 'easeInOutQuint', 'easeOutInQuint', 'easeInSine', 'easeOutSine', 'easeInOutSine', 'easeOutInSine', 'easeInExpo', 'easeOutExpo', 'easeInOutExpo', 'easeOutInExpo', 'easeInCirc', 'easeOutCirc', 'easeInOutCirc', 'easeOutInCirc', 'easeInBack', 'easeOutBack', 'easeInOutBack', 'easeOutInBack', 'easeInBounce', 'easeOutBounce', 'easeInOutBounce', 'easeOutInBounce']
 
 easingStrings.forEach(function(ease, i){
   // create a clone for each easing
@@ -16,11 +15,11 @@ easingStrings.forEach(function(ease, i){
 
   anime({
     targets: transform.getLocalPosition(),
-    update: anime.utils.updateLocalPosition(transform),
+    update: anime.ls.updateLocalPosition(transform),
     y: [-10, 10],
     loop: true,
     direction: 'alternate',
     easing: ease,
-    duration: 3,
+    duration: 3000,
   })
 })

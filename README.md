@@ -27,7 +27,7 @@ anime({
   loop: true,
   easing: 'linear',
   duration: 3,
-  update: anime.utils.updateLocalEuler(transform),
+  update: anime.ls.updateLocalEuler(transform),
   begin: function () {
     print('begin')
   },
@@ -55,17 +55,15 @@ anime.js has great documentation, and most of what you need to know will be foun
 
 There are some extra properties and functions that are specific to the Lens Studio port, which can be found at the bottom of the [anime.js](/Public/AnimeJS%20Resources/Scripts/anime.js) script. These are documented with docstrings so you can see the required arguments and properties in the code hints (via vscode extension).
 
-`anime.easings`: list of all [Penner functions](https://animejs.com/documentation/#pennerFunctions) for easing for convenient referencing and autocompletion.
+`anime.ls.updateLocalPosition(transform)`: Generates an update handler for local position.
 
-`anime.utils.updateLocalPosition(transform)`: Generates an update handler for local position.
+`anime.ls.updateWorldPosition(transform)`: Generates an update handler for world position.
 
-`anime.utils.updateWorldPosition(transform)`: Generates an update handler for world position.
+`anime.ls.updateLocalEuler(transform)`: Generates an update handler for local euler rotation.
 
-`anime.utils.updateLocalEuler(transform)`: Generates an update handler for local euler rotation.
+`anime.ls.updateWorldEuler(transform)`: Generates an update handler for world euler rotation.
 
-`anime.utils.updateWorldEuler(transform)`: Generates an update handler for world euler rotation.
-
-`anime.utils.updateProp(target, propName)`: Generates an update handler that reassigns the vec3 so changes are applied.
+`anime.ls.updateProp(target, propName)`: Generates an update handler that reassigns the vec3 so changes are applied.
 
 A [Promise polyfill](/Public/AnimeJS%20Resources/Scripts/Promise.js) is also included since it's required by anime.js.
 

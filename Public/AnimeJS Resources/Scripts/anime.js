@@ -7,11 +7,110 @@
 
 'use strict';
 
+/**
+ * An object that represents a target with a given ID and a set of transforms.
+ *
+ * @typedef {Object} AnimeAnimatable
+ * @property {number} id - Animatable ID for this animation.
+ * @property {Object} target - Target object.
+ * @property {number} total - Number of animatables in the animation.
+ */
+
+/**
+ * @typedef {'linear'|'easeInQuad'|'easeOutQuad'|'easeInOutQuad'|'easeOutInQuad'|'easeInCubic'|'easeOutCubic'|'easeInOutCubic'|'easeOutInCubic'|'easeInQuart'|'easeOutQuart'|'easeInOutQuart'|'easeOutInQuart'|'easeInQuint'|'easeOutQuint'|'easeInOutQuint'|'easeOutInQuint'|'easeInSine'|'easeOutSine'|'easeInOutSine'|'easeOutInSine'|'easeInExpo'|'easeOutExpo'|'easeInOutExpo'|'easeOutInExpo'|'easeInCirc'|'easeOutCirc'|'easeInOutCirc'|'easeOutInCirc'|'easeInBack'|'easeOutBack'|'easeInOutBack'|'easeOutInBack'|'easeInBounce'|'easeOutBounce'|'easeInOutBounce'|'easeOutInBounce'} AnimePennerEasings
+ */
+
+/**
+ * @typedef {Object} AnimeParams
+ * @property {Object|Array} params.targets - A JavaScript Object or Array with at least one property containing a numerical value.
+ * @property {number} params.duration - Defines the duration in milliseconds of the animation.
+ * @property {number} params.delay - Defines the delay in milliseconds of the animation.
+ * @property {number} params.endDelay - Adds some extra time in milliseconds at the end of the animation.
+ * @property {AnimePennerEasings} params.easing - Defines the timing function of the animation.
+ * @property {number} params.round - Rounds up the value to x decimals.
+ * @property {'normal'|'reverse'|'alternate'} params.direction - Defines the direction of the animation.
+ * @property {boolean|number} params.loop - Defines the number of iterations of your animation.
+ * @property {boolean} params.autoplay - Defines if the animation should automatically start or not.
+ * @property {Object[]} params.keyframes - Animation keyframes are defined using an Array, within the keyframes property.
+ * Callbacks & Promises
+ * @property {function(AnimeInstance)} params.update - Callback triggered on every frame as soon as the animation starts playing.
+ * @property {function(AnimeInstance)} params.begin - Callback is triggered once, when the animation starts playing.
+ * @property {function(AnimeInstance)} params.complete - Callback is triggered once, when the animation is completed.
+ * @property {function(AnimeInstance)} params.loopBegin - Callback is triggered once everytime a loop begins.
+ * @property {function(AnimeInstance)} params.loopComplete - Callback is triggered once everytime a loop is completed.
+ * @property {function(AnimeInstance)} params.change - Callback triggered on every frame in between the animation's delay and endDelay.
+ * @property {function(AnimeInstance)} params.changeBegin - Callback is triggered everytime the animation starts changing.
+ * @property {function(AnimeInstance)} params.changeComplete - Callback is triggered everytime the animation stops changing.
+ * @property {Promise} params.finished - Resolves when the animation is complete. 
+ */
+
+/**
+ * @typedef {Object} AnimeInstance
+ * Methods
+ * @property {Function} play - Plays a paused animation, or starts the animation if the autoplay parameters is set to false.
+ * @property {Function} pause - Pauses a running animation.
+ * @property {Function} restart - Restarts an animation from its initial values.
+ * @property {Function} reverse - Reverses the direction of an animation.
+ * @property {function(number)} seek - Jump to a specific time (in milliseconds).
+ * @property {function(string, Object)} set - set Immediately sets values to the specified targets.
+ * @property {function(number)} tick - Plays an animation using an external requestAnimationFrame loop.
+ * @property {function(Object)} remove - Removes targets from a running animation or timeline.
+ * @property {Function} reset 
+ * Params
+ * @property {boolean} autoplay - Defines if the animation should automatically start or not.
+ * @property {number} duration - Defines the duration in milliseconds of the animation.
+ * @property {number} delay - Defines the delay in milliseconds of the animation.
+ * @property {number} endDelay - Adds some extra time in milliseconds at the end of the animation.
+ * @property {boolean|number} loop - Defines the number of iterations of your animation.
+ * @property {'normal'|'reverse'|'alternate'} direction - Defines the direction of the animation.
+ * Callbacks & Promises
+ * @property {function(AnimeInstance)} begin - Callback is triggered once, when the animation starts playing.
+ * @property {function(AnimeInstance)} complete - Callback is triggered once, when the animation is completed.
+ * @property {function(AnimeInstance)} loopBegin - callback is triggered once everytime a loop begins.
+ * @property {function(AnimeInstance)} loopComplete - callback is triggered once everytime a loop is completed.
+ * @property {function(AnimeInstance)} change - Callback triggered on every frame in between the animation's delay and endDelay.
+ * @property {function(AnimeInstance)} changeBegin - callback is triggered everytime the animation starts changing.
+ * @property {function(AnimeInstance)} changeComplete - callback is triggered everytime the animation stops changing.
+ * @property {Promise} finished - Resolves when the animation is finished
+ * States
+ * @property {Array<AnimeAnimatable>} animatables
+ * @property {Array} animations
+ * @property {Array} children
+ * @property {number} id
+ * @property {boolean} began
+ * @property {boolean} changeBegan
+ * @property {boolean} changeCompleted
+ * @property {boolean} completed
+ * @property {number} currentTime
+ * @property {boolean} loopBegan
+ * @property {boolean} passThrough
+ * @property {boolean} paused
+ * @property {number} progress
+ * @property {number} remaining
+ * @property {boolean} reversePlayback
+ * @property {boolean} reversed
+ * @property {number} timelineOffset
+ */
+
+/**
+ * A function that adds a child animation to a timeline.
+ * @typedef {function(params, timelineOffset?): AnimeTimelineInstance} AnimeTimelineAdd
+ * @param {AnimeParams} params - The child animation parameters, which override the timeline default parameters.
+ * @param {number} [timelineOffset] - An optional time offset that specifies when the animation starts in the timeline. If no offset is specified, the animation will start after the previous animation ends.
+ * @returns {AnimeTimelineInstance} The timeline instance.
+ */
+
+/**
+ * @typedef {AnimeInstance & { add:AnimeTimelineAdd }} AnimeTimelineInstance
+ */
+
+// * @see {@link https://animejs.com/documentation/#timelineBasics}
+
 // Polyfills for browser functions
 var rafCallbacks = []
 script.createEvent('UpdateEvent').bind(function () {
   var l = rafCallbacks.length
-  var time = getTime()
+  var time = getTime() * 1000
   while (l--) rafCallbacks.shift()(time)
 })
 function requestAnimationFrame(cb) {
@@ -472,7 +571,7 @@ function parseTargets(targets) {
 function getAnimatables(targets) {
   var parsed = parseTargets(targets);
   return parsed.map(function (t, i) {
-    return { target: t, id: i, total: parsed.length, transforms: { list: [] } };
+    return { target: t, id: i, total: parsed.length };
   });
 }
 
@@ -589,6 +688,7 @@ function normalizeTweens(prop, animatable) {
 
 var setProgressValue = {
   object: function (t, p, v) { return t[p] = v; },
+  // TODO can we automate updating lens studio transforms in a similar way?
   //  transform: function (t, p, v, transforms, manual) {
   //    transforms.list.set(p, v);
   //    if (p === transforms.last || manual) {
@@ -712,80 +812,19 @@ var engine = (function () {
   return play;
 })();
 
-/**
- * @typedef {Object} AnimeParams
- * @param {Object|Array} params.targets A JavaScript Object or Array with at least one property containing a numerical value.
- * @param {Number} params.duration Defines the duration in seconds of the animation.
- * @param {Number} params.delay Defines the delay in seconds of the animation.
- * @param {Number} params.endDelay Adds some extra time in milliseconds at the end of the animation.
- * @param {String} params.easing Defines the timing function of the animation.
- * @param {Number} params.round Rounds up the value to x decimals.
- * @param {'normal'|'reverse'|'alternate'} params.direction Defines the direction of the animation.
- * @param {Boolean|Number} params.loop Defines the number of iterations of your animation.
- * @param {Boolean} params.autoplay Defines if the animation should automatically start or not.
- * @param {Object[]} params.keyframes Animation keyframes are defined using an Array, within the keyframes property.
- * @param {function(object)} params.update Callback triggered on every frame as soon as the animation starts playing.
- * @param {function(object)} params.begin Callback is triggered once, when the animation starts playing.
- * @param {function(object)} params.complete Callback is triggered once, when the animation is completed.
- * @param {function(object)} params.loopBegin callback is triggered once everytime a loop begins.
- * @param {function(object)} params.loopComplete callback is triggered once everytime a loop is completed.
- * @param {function(object)} params.change Callback triggered on every frame in between the animation's delay and endDelay.
- * @param {function(object)} params.changeBegin callback is triggered everytime the animation starts changing.
- * @param {function(object)} params.changeComplete callback is triggered everytime the animation stops changing.
- * @param {Promise} params.finished Resolves when the animation is complete. 
- */
-
-/**
- * @typedef {Object} AnimeInstance
- * Methods
- * @property {function} play Plays a paused animation, or starts the animation if the autoplay parameters is set to false.
- * @property {function} pause Pauses a running animation.
- * @property {function} restart Restarts an animation from its initial values.
- * @property {function} reverse Reverses the direction of an animation.
- * @property {function(number)} seek Jump to a specific time (in seconds).
- * @property {function(String, Object)} set Immediately sets values to the specified targets.
- * @property {function(number)} tick Plays an animation using an external requestAnimationFrame loop.
- * @property {function(Object)} remove Removes targets from a running animation or timeline.
- * @property {function} reset 
- * Params
- * @property {Boolean} autoplay Defines if the animation should automatically start or not.
- * @property {Number} duration Defines the duration in seconds of the animation.
- * @property {Number} delay Defines the delay in seconds of the animation.
- * @property {Number} endDelay Adds some extra time in milliseconds at the end of the animation.
- * @property {Boolean|Number} loop Defines the number of iterations of your animation.
- * @property {'normal'|'reverse'|'alternate'} direction Defines the direction of the animation.
- * @property {function(object)} begin Callback is triggered once, when the animation starts playing.
- * @property {function(object)} complete Callback is triggered once, when the animation is completed.
- * @property {function(object)} loopBegin callback is triggered once everytime a loop begins.
- * @property {function(object)} loopComplete callback is triggered once everytime a loop is completed.
- * @property {function(object)} change Callback triggered on every frame in between the animation's delay and endDelay.
- * @property {function(object)} changeBegin callback is triggered everytime the animation starts changing.
- * @property {function(object)} changeComplete callback is triggered everytime the animation stops changing.
- * States
- * @property {Promise} finished Resolves when the animation is finished
- * @property {Array} animatables
- * @property {Array} animations
- * @property {Array} children
- * @property {Number} id
- * @property {Boolean} began
- * @property {Boolean} changeBegan
- * @property {Boolean} changeCompleted
- * @property {Boolean} completed
- * @property {Number} currentTime
- * @property {Boolean} loopBegan
- * @property {Boolean} passThrough
- * @property {Boolean} paused
- * @property {Number} progress
- * @property {Number} remaining
- * @property {Boolean} reversePlayback
- * @property {Boolean} reversed
- * @property {Number} timelineOffset
- */
-
 // Public Instance
-/**
- * Creates an animation with anime.js
- * @param {AnimeParams} params animation parameters.
+/** 
+ * @typedef {Function} Anime
+ * @param {AnimeParams} params - animation parameters.
+ * @property {string} version
+ * @property {number} speed - global animation speed.
+ * @property {AnimeInstance[]} running - Returns an Array of all active anime.js instances currently running.
+ * @property {function(targets) => void} remove - Removes targets from a running animation or timeline.
+ * @property {function(target, propertyName, unit)} get - Returns the original value of an element.
+ * @property {function(targets, propObject)} set - Immediately sets values to the specified targets.
+ * @property {function(value, staggerParams)} stagger - Staggering allows you to animate multiple elements with follow through and overlapping action.
+ * @property {function(min, max)} random - Returns a random integer within a specific range.
+ * @property {function(time)} tick - Plays an animation using an external requestAnimationFrame loop.
  * @returns {AnimeInstance}
  */
 function anime(params) {
@@ -884,7 +923,8 @@ function anime(params) {
           }
         }
       }
-      setProgressValue[anim.type](animatable.target, anim.property, progress, animatable.transforms);
+      setProgressValue[anim.type](animatable.target, anim.property, progress);
+      // setProgressValue[anim.type](animatable.target, anim.property, progress, animatable.transforms);
       anim.currentValue = progress;
       i++;
     }
@@ -1126,6 +1166,11 @@ function stagger(val, params) {
 
 // Timeline
 
+/**
+ * Timelines let you synchronise multiple animations together.
+ * @param {AnimeParams} params 
+ * @returns {AnimeTimelineInstance}
+ */
 function timeline(params) {
   if (params === void 0) params = {};
 
@@ -1162,8 +1207,6 @@ function timeline(params) {
 
 anime.version = '3.2.1';
 anime.speed = 1;
-// TODO:#review: naming, documentation
-anime.suspendWhenDocumentHidden = true;
 anime.running = activeInstances;
 anime.remove = removeTargetsFromActiveInstances;
 anime.get = getOriginalTargetValue;
@@ -1175,14 +1218,36 @@ anime.penner = penner;
 anime.random = function (min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; };
 
 /*
+
+  Extra convenience functions, not included in the official animejs build
+
+*/
+
+anime.ease = {
+  /**
+   * @param {AnimePennerEasings} type
+   */
+  penner: function (type) { return type },
+  spring: function (mass, stiffness, damping, velocity) { return 'spring(' + [mass, stiffness, damping, velocity].join(', ') + ')' },
+  steps: function (steps) { return 'steps(' + steps + ')' },
+  /**
+   * @param {'In'|'Out'|'InOut'|'OutIn'} type 
+   * @param {number} amplitude 
+   * @param {number} period 
+   * @returns {string}
+   */
+  elastic: function (type, amplitude, period) { return 'ease' + type + 'Elastic(' + [amplitude, period].join(', ') + ')' }
+}
+
+/*
   
-  NOTE: Below is specific to Lens Studio, not included in the official animejs build
+  Below is specific to Lens Studio, not included in the official animejs build
 
 */
 
 /**
  * Convenience function for anime's update callback to set vec3
- * @param {*} target any object (screen transform, 3d transform)
+ * @param {Object} target any object (screen transform, 3d transform)
  * @param {string} propName name of the property to update on target object
  * @returns {function} update handler for anime
  * @description
@@ -1192,7 +1257,7 @@ anime.random = function (min, max) { return Math.floor(Math.random() * (max - mi
  *   y: [100, 0],
  *   duration: 2,
  *   ease: 'easeOutQuint',
- *   update: anime.utils.updateProp(st, 'position')
+ *   update: anime.ls.updateProp(st, 'position')
  *  })
  */
 function updateProp(target, propName) {
@@ -1210,7 +1275,7 @@ function updateProp(target, propName) {
  * var transform = sceneObj.getTransform()
  * anime({
  *  targets: transform.getLocalPosition(),
- *  update: anime.utils.updateLocalPosition(transform),
+ *  update: anime.ls.updateLocalPosition(transform),
  * })
  *  
  */
@@ -1229,7 +1294,7 @@ function updateLocalPosition(transform) {
  * var transform = sceneObj.getTransform()
  * anime({
  *  targets: transform.getWorldPosition(),
- *  update: anime.utils.updateWorldPosition(transform),
+ *  update: anime.ls.updateWorldPosition(transform),
  * })
  *  
  */
@@ -1241,7 +1306,6 @@ function updateWorldPosition(transform) {
 
 // TODO quats! 
 
-
 /**
  * Convenience function for anime's update callback to set local euler rotation
  * @param {Transform} transform scene
@@ -1251,7 +1315,7 @@ function updateWorldPosition(transform) {
  * var transform = sceneObj.getTransform()
  * anime({
  *  targets: transform.getLocalRotation().toEulerAngles(),
- *  update: anime.utils.updateLocalEuler(transform),
+ *  update: anime.ls.updateLocalEuler(transform),
  * })
  *  
  */
@@ -1270,7 +1334,7 @@ function updateLocalEuler(transform) {
  * var transform = sceneObj.getTransform()
  * anime({
  *  targets: transform.getWorldRotation().toEulerAngles(),
- *  update: anime.utils.updateWorldEuler(transform),
+ *  update: anime.ls.updateWorldEuler(transform),
  * })
  *  
  */
@@ -1289,7 +1353,7 @@ function updateWorldEuler(transform) {
  * var transform = sceneObj.getTransform()
  * anime({
  *  targets: transform.getLocalScale(),
- *  update: anime.utils.updateLocalScale(transform),
+ *  update: anime.ls.updateLocalScale(transform),
  * })
  *  
  */
@@ -1308,7 +1372,7 @@ function updateLocalScale(transform) {
  * var transform = sceneObj.getTransform()
  * anime({
  *  targets: transform.getWorldScale(),
- *  update: anime.utils.updateWorldScale(transform),
+ *  update: anime.ls.updateWorldScale(transform),
  * })
  *  
  */
@@ -1318,7 +1382,18 @@ function updateWorldScale(transform) {
   }
 }
 
-anime.utils = {
+/*
+
+  TODO 
+
+  - Make some convenience functions for lens studio
+    - move, scale, rotate, color
+
+  - Can we use multiple targets somehow (e.g. move and scale in the same animation)?
+
+*/
+
+anime.ls = {
   updateProp: updateProp,
   updateLocalPosition: updateLocalPosition,
   updateWorldPosition: updateWorldPosition,
@@ -1326,22 +1401,6 @@ anime.utils = {
   updateWorldEuler: updateWorldEuler,
   updateLocalScale: updateLocalScale,
   updateWorldScale: updateWorldScale,
-}
-
-/**
- * https://animejs.com/documentation/#pennerFunctions
- */
-anime.easings = {
-  'linear': 'linear',
-  'easeInQuad': 'easeInQuad', 'easeOutQuad': 'easeOutQuad', 'easeInOutQuad': 'easeInOutQuad', 'easeOutInQuad': 'easeOutInQuad',
-  'easeInCubic': 'easeInCubic', 'easeOutCubic': 'easeOutCubic', 'easeInOutCubic': 'easeInOutCubic', 'easeOutInCubic': 'easeOutInCubic',
-  'easeInQuart': 'easeInQuart', 'easeOutQuart': 'easeOutQuart', 'easeInOutQuart': 'easeInOutQuart', 'easeOutInQuart': 'easeOutInQuart',
-  'easeInQuint': 'easeInQuint', 'easeOutQuint': 'easeOutQuint', 'easeInOutQuint': 'easeInOutQuint', 'easeOutInQuint': 'easeOutInQuint',
-  'easeInSine': 'easeInSine', 'easeOutSine': 'easeOutSine', 'easeInOutSine': 'easeInOutSine', 'easeOutInSine': 'easeOutInSine',
-  'easeInExpo': 'easeInExpo', 'easeOutExpo': 'easeOutExpo', 'easeInOutExpo': 'easeInOutExpo', 'easeOutInExpo': 'easeOutInExpo',
-  'easeInCirc': 'easeInCirc', 'easeOutCirc': 'easeOutCirc', 'easeInOutCirc': 'easeInOutCirc', 'easeOutInCirc': 'easeOutInCirc',
-  'easeInBack': 'easeInBack', 'easeOutBack': 'easeOutBack', 'easeInOutBack': 'easeInOutBack', 'easeOutInBack': 'easeOutInBack',
-  'easeInBounce': 'easeInBounce', 'easeOutBounce': 'easeOutBounce', 'easeInOutBounce': 'easeInOutBounce', 'easeOutInBounce': 'easeOutInBounce',
 }
 
 global.anime = anime

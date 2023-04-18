@@ -11,18 +11,18 @@ screenTransforms.forEach(function (st) {
   tl.add({
     targets: [st.position],
     y: [20, 0],
-    duration: 2,
-    easing: anime.easings.easeOutBack,
-    update: anime.utils.updateProp(st, 'position'),
+    duration: 2000,
+    easing: 'easeOutBack',
+    update: anime.ls.updateProp(st, 'position'),
   })
   // move from mid to bottom
   tl.add({
     targets: [st.position],
     y: [0, -20],
-    delay: 2,
-    duration: 1,
-    easing: anime.easings.easeInQuint,
-    update: anime.utils.updateProp(st, 'position'),
+    delay: 2000,
+    duration: 1000,
+    easing: 'easeInQuint',
+    update: anime.ls.updateProp(st, 'position'),
     // equivalent manual method for updating props
     // update(anim) {
     //   // needs reassignment
@@ -32,5 +32,5 @@ screenTransforms.forEach(function (st) {
 })
 
 tl.finished.then(function () {
-  print('done!')
+  print('timeline done!')
 })

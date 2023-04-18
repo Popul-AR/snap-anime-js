@@ -19,10 +19,10 @@ var colorA = script.colorA
 /** @type {vec4} */
 var colorB = script.colorB
 
-anime({
+var anim = anime({
   targets: {x: 0},
   x: 1,
-  duration: 1,
+  duration: 1000,
   loop: true,
   direction: 'alternate',
   easing: 'linear',

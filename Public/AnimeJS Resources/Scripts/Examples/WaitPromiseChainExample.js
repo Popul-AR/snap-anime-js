@@ -15,7 +15,7 @@ wait(3).then(function(){
   var anim = anime({
     targets: {t: 0},
     t: 1,
-    duration: 2,
+    duration: 2000,
   })
 
   anim.finished.then(function(){

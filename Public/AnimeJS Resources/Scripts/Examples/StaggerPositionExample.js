@@ -23,9 +23,9 @@ anime({
   z: 10,
   loop: true,
   direction: 'alternate',
-  easing: easing || anime.easings.easeInOutExpo,
-  duration: 2,
-  delay: anime.stagger(.1),
+  easing: easing || 'easeInOutExpo',
+  duration: 2000,
+  delay: anime.stagger(100),
   update: function (tween, i) {
     script.objs.forEach(function (obj, i) {
       obj.getTransform().setLocalPosition(startPositions[i])
